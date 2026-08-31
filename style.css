@@ -1,179 +1,190 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
-  min-height: 100vh;
+    min-height: 100vh;
 
-  background-image: url("bandeira.jpg");
+    background-image: url('bandeira.jpg');
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
 }
 
 .container {
-  width: 100%;
-  max-width: 700px;
+    width: 100%;
+    max-width: 700px;
 }
 
 .personagem-card {
-  background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.95);
 
-  border-radius: 20px;
+    border-radius: 20px;
 
-  padding: 30px;
+    padding: 30px;
 
-  text-align: center;
+    text-align: center;
 
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 
-  transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .personagem-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 h1 {
-  color: #20a227;
+    color: #20a227;
 
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 
-  font-size: 2.2rem;
+    font-size: 2.2rem;
 }
 
 .imagem-container {
-  width: 100%;
+    width: 100%;
 
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .imagem-container img {
-  width: 100%;
-  max-width: 450px;
+    width: 100%;
+    max-width: 450px;
 
-  height: 450px;
+    height: 450px;
 
-  object-fit: cover;
+    object-fit: cover;
 
-  border-radius: 15px;
+    border-radius: 15px;
 
-  border: 5px solid #087f3d;
+    border: 5px solid #087f3d;
+
+
 }
 
 .descricao {
-  color: #333;
+    color: #333;
 
-  line-height: 1.7;
+    line-height: 1.7;
 
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .descricao h2 {
-  color: #087f3d;
+    color: #087f3d;
 
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .descricao p {
-  margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .sound-button {
-  background: #087f3d;
+    background: #087f3d;
 
-  color: white;
+    color: white;
 
-  border: none;
+    border: none;
 
-  border-radius: 10px;
+    border-radius: 10px;
 
-  padding: 15px 30px;
+    padding: 15px 30px;
 
-  font-size: 1rem;
+    font-size: 1rem;
 
-  font-weight: bold;
+    font-weight: bold;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .sound-button:hover {
-  background: #05a653;
+    background: #05a653;
 
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .sound-button:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
+
+
 
 /* tablet */
 
+
 @media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
 
-  .personagem-card {
-    padding: 25px;
-  }
+    body {
+        padding: 20px;
+    }
 
-  h1 {
-    font-size: 1.9rem;
-  }
+    .personagem-card {
+        padding: 25px;
+    }
 
-  .imagem-container img {
-    height: 380px;
-  }
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .imagem-container img {
+        height: 380px;
+    }
 }
+
+
 
 /* celular */
 
+
 @media (max-width: 480px) {
-  body {
-    padding: 15px;
-  }
 
-  .personagem-card {
-    padding: 20px;
-    border-radius: 15px;
-  }
+    body {
+        padding: 15px;
+    }
 
-  h1 {
-    font-size: 1.6rem;
-  }
+    .personagem-card {
+        padding: 20px;
+        border-radius: 15px;
+    }
 
-  .imagem-container img {
-    height: 300px;
-  }
+    h1 {
+        font-size: 1.6rem;
+    }
 
-  .descricao {
-    font-size: 0.95rem;
-  }
+    .imagem-container img {
+        height: 300px;
+    }
 
-  .descricao h2 {
-    font-size: 1.3rem;
-  }
+    .descricao {
+        font-size: 0.95rem;
+    }
 
-  .sound-button {
-    width: 100%;
+    .descricao h2 {
+        font-size: 1.3rem;
+    }
 
-    padding: 14px 20px;
-  }
+    .sound-button {
+        width: 100%;
+
+        padding: 14px 20px;
+    }
 }
