@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    background-image: url('img/PT.png');
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+}
+
+.personagem-card {
+    background-color: rgba(248, 2, 2, 0.95);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+
+    transition: transform 0.3s ease;
+}
+
+.personagem-card:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #f2f5f2;
+
+    margin-bottom: 25px;
+
+    font-size: 2.2rem;
+}
+
+.imagem-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 25px;
+}
+
+.imagem-container img {
+    width: 100%;
+    max-width: 450px;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    border: 5px solid #f9efef;
+
+
+}
+
+.descricao {
+    color: #fbf8f8;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.descricao h2 {
+    color: #e11d1d;
+
+    margin-bottom: 15px;
+
+    font-size: 1.5rem;
+}
+
+.descricao p {
+    margin-bottom: 12px;
+}
+
+.sound-button {
+    background: #c43636;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 15px 30px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sound-button:hover {
+    background: #e35454;
+
+    transform: scale(1.05);
+}
+
+.sound-button:active {
+    transform: scale(0.95);
+}
+
+
+
+/* tablet */
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .personagem-card {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .imagem-container img {
+        height: 380px;
+    }
+}
+
+
+
+/* celular */
+
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .personagem-card {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .imagem-container img {
+        height: 300px;
+    }
+
+    .descricao {
+        font-size: 0.95rem;
+    }
+
+    .descricao h2 {
+        font-size: 1.3rem;
+    }
+
+    .sound-button {
+        width: 100%;
+
+        padding: 14px 20px;
+    }
+}
